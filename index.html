@@ -1,18 +1,16 @@
 <html>
 <head>
   <style>
-    /* Genel stil tanımları */
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
       margin: 0;
       padding: 0;
     }
-
-    /* Başlık stil tanımları */
+/*Header*/
     header {
-      display: flex; /* Flex konteyner */
-      align-items: center; /* Flex öğelerini ortala */
+      display: flex;
+      align-items: center;
       background-color: #333;
       color: white;
       height: 80px;
@@ -24,9 +22,9 @@
     }
 
     header nav {
-      display: flex; /* Flex konteyner */
-      flex: 1; /* Tüm boşluğu kapla */
-      justify-content: flex-end; /* Flex öğelerini sağa hizala */
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
     }
 
     header nav a {
@@ -41,8 +39,8 @@
     }
 
     header form {
-      display: flex; /* Flex konteyner */
-      align-items: center; /* Flex öğelerini ortala */
+      display: flex;
+      align-items: center;
       margin-left: 10px;
     }
 
@@ -57,16 +55,16 @@
       display: none;
     }
 
-    /* İçerik stil tanımları */
+    /* Main section */
     main {
-      display: flex; /* Flex konteyner */
-      flex-wrap: wrap; /* Flex öğelerini birden fazla satıra böl */
-      justify-content: space-between; /* Flex öğelerini aralıklı hizala */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       margin: 20px;
     }
 
     main article {
-      flex: 0 0 45%; /* Flex öğelerinin büyüyemeyeceğini ve küçülemeyeceğini belirt */
+      flex: 0 0 45%; /* Flex elementlərinin büyüyemeyeceğini ve kiçilemeyeceğini ifade edir */
       background-color: white;
       border: 1px solid #ccc;
       margin-bottom: 20px;
@@ -99,9 +97,9 @@
       color: #555;
     }
 
-    /* Yan bölüm stil tanımları */
+    /* right side */
     aside {
-      flex: 0 0 25%; /* Flex öğelerinin büyüyemeyeceğini ve küçülemeyeceğini belirt */
+      flex: 0 0 25%; /* Flex elementlərinin büyüyemeyeceğini ve kiçilemeyeceğini ifade edir */
       background-color: white;
       border: 1px solid #ccc;
       margin: 20px;
@@ -131,12 +129,12 @@
       color: #555;
     }
 
-    /* Altbilgi stil tanımları */
+    /* Footer */
     footer {
-      display: flex; /* Flex konteyner */
-      flex-wrap: wrap; /* Flex öğelerini birden fazla satıra böl */
-      justify-content: space-between; /* Flex öğelerini aralıklı hizala */
-      align-items: center; /* Flex öğelerini ortala */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
       background-color: #333;
       color: white;
       padding: 10px;
@@ -147,7 +145,7 @@
     }
 
     footer ul {
-      display: flex; /* Flex konteyner */
+      display: flex;
       list-style: none;
       padding: 0;
     }
@@ -166,10 +164,10 @@
       color: #555;
     }
 
-    /* Ekran boyutu 600px'den küçükse uygulanacak stil tanımları */
+    /* Responsivlik */
     @media (max-width: 600px) {
       header nav {
-        justify-content: center; /* Flex öğelerini ortala */
+        justify-content: center;
       }
 
       header form {
@@ -177,21 +175,21 @@
       }
 
       main {
-        flex-direction: column; /* Flex öğelerini dikey olarak hizala */
+        flex-direction: column;
       }
 
       main article {
-        flex: 1 0 auto; /* Flex öğelerinin büyüyebileceğini ve küçülebileceğini belirt */
+        flex: 1 0 auto; /* Flex elementlərinin büyüyemeyeceğini ve kiçilemeyeceğini ifade edir */
       }
 
       aside {
-        flex: 1 0 auto; /* Flex öğelerinin büyüyebileceğini ve küçülebileceğini belirt */
+        flex: 1 0 auto; /* Flex elementlərinin büyüyemeyeceğini ve kiçilemeyeceğini ifade edir */
       }
     }
   </style>
 </head>
 <body>
-  <!-- Başlık bölümü -->
+  <!-- Başlıq bölümü -->
   <header>
     <img src="logo.png" alt="Logo">
     <nav>
@@ -205,7 +203,7 @@
     </form>
   </header>
 
-  <!-- İçerik bölümü -->
+  <!-- Əsas hissə -->
   <main>
     <!-- Yazılar bölümü -->
     <article>
@@ -245,7 +243,7 @@
     </aside>
   </main>
 
-  <!-- Altbilgi bölümü -->
+  <!-- Footer bölümü -->
   <footer>
     <p>© 2024 Burak Senyurt. Tüm hakları saklıdır.</p>
     <ul>
