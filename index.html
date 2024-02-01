@@ -1,0 +1,259 @@
+<html>
+<head>
+  <style>
+    /* Genel stil tanımları */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Başlık stil tanımları */
+    header {
+      display: flex; /* Flex konteyner */
+      align-items: center; /* Flex öğelerini ortala */
+      background-color: #333;
+      color: white;
+      height: 80px;
+      padding: 10px;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    header nav {
+      display: flex; /* Flex konteyner */
+      flex: 1; /* Tüm boşluğu kapla */
+      justify-content: flex-end; /* Flex öğelerini sağa hizala */
+    }
+
+    header nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    header nav a:hover {
+      background-color: #555;
+    }
+
+    header form {
+      display: flex; /* Flex konteyner */
+      align-items: center; /* Flex öğelerini ortala */
+      margin-left: 10px;
+    }
+
+    header form input[type="text"] {
+      width: 200px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    header form input[type="submit"] {
+      display: none;
+    }
+
+    /* İçerik stil tanımları */
+    main {
+      display: flex; /* Flex konteyner */
+      flex-wrap: wrap; /* Flex öğelerini birden fazla satıra böl */
+      justify-content: space-between; /* Flex öğelerini aralıklı hizala */
+      margin: 20px;
+    }
+
+    main article {
+      flex: 0 0 45%; /* Flex öğelerinin büyüyemeyeceğini ve küçülemeyeceğini belirt */
+      background-color: white;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    main article h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    main article img {
+      width: 100%;
+      height: auto;
+    }
+
+    main article p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    main article a {
+      display: block;
+      text-align: right;
+      color: #333;
+      text-decoration: none;
+    }
+
+    main article a:hover {
+      color: #555;
+    }
+
+    /* Yan bölüm stil tanımları */
+    aside {
+      flex: 0 0 25%; /* Flex öğelerinin büyüyemeyeceğini ve küçülemeyeceğini belirt */
+      background-color: white;
+      border: 1px solid #ccc;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    aside h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside ul li {
+      margin: 10px 0;
+    }
+
+    aside ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    aside ul li a:hover {
+      color: #555;
+    }
+
+    /* Altbilgi stil tanımları */
+    footer {
+      display: flex; /* Flex konteyner */
+      flex-wrap: wrap; /* Flex öğelerini birden fazla satıra böl */
+      justify-content: space-between; /* Flex öğelerini aralıklı hizala */
+      align-items: center; /* Flex öğelerini ortala */
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer ul {
+      display: flex; /* Flex konteyner */
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin: 0 10px;
+    }
+
+    footer ul li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+
+    footer ul li a:hover {
+      color: #555;
+    }
+
+    /* Ekran boyutu 600px'den küçükse uygulanacak stil tanımları */
+    @media (max-width: 600px) {
+      header nav {
+        justify-content: center; /* Flex öğelerini ortala */
+      }
+
+      header form {
+        margin-left: 0;
+      }
+
+      main {
+        flex-direction: column; /* Flex öğelerini dikey olarak hizala */
+      }
+
+      main article {
+        flex: 1 0 auto; /* Flex öğelerinin büyüyebileceğini ve küçülebileceğini belirt */
+      }
+
+      aside {
+        flex: 1 0 auto; /* Flex öğelerinin büyüyebileceğini ve küçülebileceğini belirt */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Başlık bölümü -->
+  <header>
+    <img src="logo.png" alt="Logo">
+    <nav>
+      <a href="#">Anasayfa</a>
+      <a href="#">Hakkımda</a>
+      <a href="#">İletişim</a>
+    </nav>
+    <form>
+      <input type="text" name="search" placeholder="Ara...">
+      <input type="submit" value="Ara">
+    </form>
+  </header>
+
+  <!-- İçerik bölümü -->
+  <main>
+    <!-- Yazılar bölümü -->
+    <article>
+      <h2>Yazı Başlığı</h2>
+      <img src="resim1.jpg" alt="Resim 1">
+      <p>Yazı özeti...</p>
+      <a href="#">Devamını Oku</a>
+    </article>
+    <article>
+      <h2>Yazı Başlığı</h2>
+      <img src="resim2.jpg" alt="Resim 2">
+      <p>Yazı özeti...</p>
+      <a href="#">Devamını Oku</a>
+    </article>
+    <article>
+      <h2>Yazı Başlığı</h2>
+      <img src="resim3.jpg" alt="Resim 3">
+      <p>Yazı özeti...</p>
+      <a href="#">Devamını Oku</a>
+    </article>
+    <article>
+      <h2>Yazı Başlığı</h2>
+      <img src="resim4.jpg" alt="Resim 4">
+      <p>Yazı özeti...</p>
+      <a href="#">Devamını Oku</a>
+    </article>
+
+    <!-- Yan bölüm -->
+    <aside>
+      <h3>Yan Bölüm Başlığı</h3>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Altbilgi bölümü -->
+  <footer>
+    <p>© 2024 Burak Senyurt. Tüm hakları saklıdır.</p>
+    <ul>
+      <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+      <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
